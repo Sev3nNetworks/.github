@@ -31,9 +31,9 @@
 <div align="left">
 
 ### [Sev3n-MetricsBridge](https://github.com/Sev3nNetworks/Sev3n-MetricsBridge)
-Agente e ponte de telemetria multiplataforma desenhado para recolher, filtrar e exportar métricas de sistema em esquemas universais JSON (compatível com a app **OHMClient**, widgets de desktop e dashboards web).
+Agente e ponte de telemetria multiplataforma desenhado para recolher, filtrar e exportar métricas de sistema em esquemas universais JSON (compatível com a app **[OHMClient](https://github.com/gajjartejas/OHM-Client)**, widgets de desktop e dashboards web).
 
-* **Windows (`/win`):** Integração com o ecossistema `LibreHardwareMonitor` (WMI) para leitura de CPU, memória RAM, discos físicos, gráficas dedicadas e interfaces de rede. Disponibiliza micro-servidor local e interface web de preferências em `/definicoes`.
+* **Windows (`/win`):** Integração com o ecossistema **[LibreHardwareMonitor](https://github.com/LibreHardwareMonitor)** (WMI) para leitura de CPU, memória RAM, discos físicos, gráficas dedicadas e interfaces de rede. Disponibiliza micro-servidor local e interface web de preferências em `/definicoes`.
 * **Linux / Unix (`/unix`):** Motor ultraleve em Python puro com leitura nativa de nós virtuais do kernel (`/proc` e `/sys`). Suporta dois modos de entrega:
   - **Modo Servidor / VPS:** Execução por Systemd Timer gerando ficheiro estático `data.json`, aproveitando o servidor HTTP já existente (Nginx/Apache) sem processos residentes em memória.
   - **Modo Autónomo (Desktop / Portátil):** Micro-servidor HTTP embutido para utilizadores domésticos (Linux Mint, Debian, Ubuntu), sem necessidade de instalar ou configurar servidores web adicionais.
